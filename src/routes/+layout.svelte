@@ -8,7 +8,7 @@
   <Header />
 {/if}
 <div
-  class="flex flex-col items-center justify-center gap-4 text-xl h-screen w-screen pb-24"
+  class="flex flex-col items-center justify-center gap-4 text-xl w-screen pb-24"
 >
   <slot />
 </div>

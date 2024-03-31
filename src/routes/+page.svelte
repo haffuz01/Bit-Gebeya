@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
   import logo from "../assets/logo.png";
 </script>
 
@@ -18,4 +18,37 @@
       >SIGN UP</button
     >
   </a>
-</div>
+</div> -->
+
+<script>
+  import { responseData } from "../assets/store";
+
+  // Subscribe to the responseData store to access the response data
+  let response;
+  responseData.subscribe((value) => {
+    response = value;
+    console.log(response);
+  });
+
+  // Import the function to make HTTP requests
+  // import postData from "../assets/store";
+
+  // // Function to handle form submission
+  // async function handleSubmit(event) {
+  //   event.preventDefault();
+
+  //   // Call the postData function to make the POST request
+  //   await postData();
+  // }
+</script>
+
+{#if response}
+  <p>Response Data: {JSON.stringify(response)}</p>
+{:else}
+  <p>Loading...</p>
+{/if}
+
+<!-- <form on:submit={handleSubmit}>
+  Form inputs
+  <button type="submit">Submit</button>
+</form> -->
