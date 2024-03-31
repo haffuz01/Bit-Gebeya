@@ -15,7 +15,7 @@
     // firstName: "",
     // lastName: "",
     password: "",
-    passwrod_confirm: "",
+    password_confirm: "",
   };
 
   // function handleSubmit() {
@@ -78,7 +78,7 @@
         <input
           type="password"
           class="w-96 rounded-xl form-input h-14 text-white focus:text-white bg-transparent"
-          bind:value={userCredentials.passwrod_confirm}
+          bind:value={userCredentials.password_confirm}
         />
       </div>
     </div>

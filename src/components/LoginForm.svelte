@@ -1,4 +1,5 @@
 <script>
+  import { goto } from "$app/navigation";
   import { loginUser } from "../assets/store";
 
   // Function to handle form submission
@@ -10,7 +11,7 @@
   }
 
   let userCredentials = {
-    username: "",
+    email: "",
     password: "",
   };
 
@@ -26,11 +27,11 @@
   action="/Home"
 >
   <div class="flex flex-col gap-2">
-    <label for="username" class="text-3xl">Username</label>
+    <label for="username" class="text-3xl">Email</label>
     <input
-      type="text"
+      type="email"
       class="w-96 rounded-xl form-input h-14 text-white focus:text-white bg-transparent"
-      bind:value={userCredentials.username}
+      bind:value={userCredentials.email}
     />
   </div>
   <div class="flex flex-col gap-2">
