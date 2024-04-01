@@ -11,9 +11,11 @@
     <p class="text-2xl">Bit Gebeya</p>
   </a>
   {#if $page.url.pathname == "/home"}
-    <button
-      class="bg-green-400 text-green-950 text-2xl font-black py-2 px-6 rounded-xl drop-shadow-xl"
-      >SELL ITEM</button
-    >
+    <a href="/new-product">
+      <button
+        class="bg-green-400 text-green-950 text-2xl font-black py-2 px-6 rounded-xl drop-shadow-xl"
+        >SELL ITEM</button
+      >
+    </a>
   {/if}
 </div>

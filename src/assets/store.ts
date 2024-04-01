@@ -76,13 +76,14 @@ export async function createItem(product) {
         price: product.price,
         quantity: 2,
         category: "Electronics",
-        image: product.src,
+        image: product.image,
       }), // Replace { key: 'value' } with your actual data
     });
 
     // Check if the request was successful
     if (response.ok) {
       const data = await response.json();
+      alert("Success: Product added.");
       console.log("POST request successful:", data);
       //   goto("/home");
     } else {

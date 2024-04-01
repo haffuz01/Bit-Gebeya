@@ -11,8 +11,10 @@
   responseData.subscribe((value) => {
     response = value;
     products = response;
-    console.log(products[0].name);
+    console.log(products);
   });
+
+  const filteredProducts = products.filter((obj) => obj.name !== "");
 
   let item = {
     name: "AllStar Converse",
@@ -29,7 +31,7 @@
     <div
       class="flex felx-row flex-wrap gap-4 justify-start w-10/12 h-[400px] overflow-y-auto"
     >
-      {#each products as product}
+      {#each filteredProducts as product}
         <ItemCard item={product} />
       {/each}
     </div>
@@ -39,7 +41,7 @@
     <div
       class="flex felx-row flex-wrap gap-4 justify-start w-10/12 h-[400px] overflow-y-auto"
     >
-      {#each products as product}
+      {#each filteredProducts as product}
         <ItemCard item={product} />
       {/each}
     </div>
