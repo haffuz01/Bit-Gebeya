@@ -16,8 +16,8 @@
   };
 
   // function handleSubmit() {
-  //   console.log(username);
-  //   console.log(password);
+  // console.log(userCredentials.email);
+  // console.log(userCredentials.password);
   // }
 </script>
 

@@ -6,22 +6,12 @@
   async function handleSubmit(event) {
     event.preventDefault();
 
-    // let [idstr, idnum] = productid.split("_");
-    // const nextidnum = parseInt(idnum) + 1;
-
-    // productid = `${idstr}_${nextidnum}`;
-
-    // Call the postData function to make the POST request
     await createItem(item);
 
-    // goto(`/product/${item.productid}`);
     goto(`/home`);
   }
 
-  // let productid = "btgb_001";
-
   let item = {
-    // productid: { productid },
     name: "",
     price: "",
     image: "",
