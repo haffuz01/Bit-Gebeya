@@ -1,6 +1,6 @@
 # Big-Gebeya
 
-A crypto based online shopping platform front-end made with [svelte](https://svelte.dev)
+A crypto based online shopping platform front-end made with [svelte](https://svelte.dev). The backend was done by my coleague Mickyas Tesfaye and can be found [here](https://github.com/Mainfiles4/Shiling-Market)
 ## Clonning the project
 
 ```bash
